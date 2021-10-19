@@ -1,0 +1,191 @@
+.footer {
+    background-color: #495567;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 102px;
+    padding-bottom: 102px;
+    position: relative;
+}
+
+.footer__top::before {
+    content: "";
+    position: absolute;
+    width: 990px;
+    height: 150px;
+    top: 230px;
+    left: 342px;
+    background-image: url("../images/sircle.png");
+}
+
+.footer__header {
+    width: 415px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;  
+}
+
+.download {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.download__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 159px;
+    height: 56px;
+    background-color: #E5ECF4;
+    border-radius: 4px;
+}
+
+.download__texts {
+    padding-top: 8px;
+    padding-bottom: 9px;
+}
+
+.download__text-1 {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567; 
+    margin: 0;
+}
+
+.download__text-2 {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;
+    margin: 0;
+}
+
+.footer__wrapper {
+    width: 100%;
+    background-color: #333A44;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.footer__bottom-wrapper {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom-list-1 {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom-item-1 {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.footer__bottom-item-1:hover {
+    color: #FCB72B;
+}
+
+.footer__bottom-list-2 {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom-item-2-img {
+    cursor: pointer;
+}
+
+.footer__bottom-item-2-img:hover path {
+    fill: #E5ECF4;
+}
+
+@media only screen and (max-width: 768px){
+    .footer__top {
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .footer__top::before {
+        background-image: url("../../images/sircle-768.png"); 
+        background-repeat: no-repeat;
+        width: 1153px;
+        height: 347px;
+        top: 278px;
+        left: 0;
+    }
+    
+    .download {
+        width: 335px;
+    }
+    
+    .footer__bottom {
+        padding: 35px 20px;
+    }
+    
+    .footer__bottom-wrapper {
+        width: 522px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .footer__header {
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .download {
+        width: 335px;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+    }
+    
+    .footer__bottom-wrapper {
+        flex-direction: column;
+        width: 522px;
+    }
+    .footer__bottom-list-1 {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .footer__bottom-item-1 {
+        margin: 10px 0;
+    }
+    .footer__bottom-wrapper {
+        width: 311px;
+    }
+}

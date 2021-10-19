@@ -1,0 +1,153 @@
+.header__container {
+    display: flex;
+    padding-top: 34px;
+    margin-bottom: 21px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+}
+
+.header__img {
+    margin-right: 58px;
+    margin-top: 10px;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 249px;
+}
+
+.nav__link {
+    font-family: 'Space Mono';
+    color: #939CAA;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #FCB72B;
+}
+
+.button {
+    font-family: 'Space Mono';
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    width: 180px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCB72B;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #FCB72B;
+    border: 3px solid #FCB72B;
+}
+
+.header__humburger-menu {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__menu-cross {
+    display: none;
+}
+
+.header__humburger-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .header__container {
+        width: 100%;
+        max-width: 620px;
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .navbar {
+        width: 523px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header__container {
+        width: 311px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__img {
+        margin: 0;
+    }
+
+    .header__humburger-menu {
+        display: block; 
+    }
+    
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 83px;
+        left: 0;
+        right: 30px;
+        z-index: 99;
+        height: 100vh;
+        padding-top: 40px;
+        text-align: left;
+        background-color: #333A44;
+    }
+
+    .navbar__list {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+        
+    .nav__item + .nav__item {
+        margin: 0;
+        margin-top: 32px;
+    }
+    
+    .nav__link {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .header--active .navbar {
+        display: block;
+    }
+    
+    .header--active .header__menu-cross  {
+        display: block;
+    }
+    
+    .header--active .header__menu-hamburger  {
+        display: none;
+    }
+}

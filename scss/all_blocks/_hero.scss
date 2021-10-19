@@ -1,0 +1,145 @@
+.scooter {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    background-image: url("../images/scooter.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    margin-bottom: 160px;
+}
+
+.scooter__container {
+    padding-top: 153px;
+}
+
+.scooter__header {
+    width: 500px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.scooter__text {
+    position: relative;
+    width: 405px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF; 
+    margin-bottom: 40px;
+    margin-left: 95px;
+}
+
+.scooter__text::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 15px;
+    top: 50%;
+    left: -70%;
+    background-image: url("../images/Path-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scooter__text::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 138px;
+    top: 50%;
+    left: 105%;
+    background-image: url("../images/Path-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px){
+    .scooter {
+        width: 768px;
+        background-image: url("../images/scooter-2.jpg");
+    }
+    
+    
+    .scooter__container {
+        max-width: 620px;
+        padding-top: 137px;
+    }
+    
+    .scooter__header {
+        width: 573px;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .scooter__text {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    
+    .scooter__text::before {
+        display: none;
+    }
+    
+    .scooter__text::after {
+        height: 128px;
+        top: 200%;
+        left: -50%;
+        background-size: contain;
+    }
+    
+    .scooter__container .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .scooter {
+        width: 370px;
+        background-image: url("../images/scooter-3.png");
+    }
+    
+    
+    .scooter__container {
+        max-width: 311px;
+        padding-top: 115px;
+    }
+    
+    .scooter__header {
+        width: 311px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .scooter__text {
+        width: 311px;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0;
+        margin-bottom: 34px;
+    }
+    
+    .scooter__text::after {
+        height: 128px;
+        top: 170%;
+        left: -100%;
+        background-size: contain;
+    }
+    
+    .scooter__container .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

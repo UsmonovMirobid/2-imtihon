@@ -1,0 +1,110 @@
+.reference__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 147px;
+}
+
+.reference__item {
+    position: relative;
+    width: 350px;
+    margin-right: 30px;
+    padding-top: 100px;
+}
+
+.reference__item-img {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 99;
+}
+
+.reference__item::before {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 10px;
+    top: 43px;
+    left: -420px;
+    background-color: #E5ECF4;
+    z-index: 1;
+}
+
+.reference__item-header {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;  
+    margin-bottom: 27px;
+}
+
+.reference__item_text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    width: 350px;   
+}
+
+@media only screen and (max-width: 768px) {
+    .reference__list {
+        flex-direction: column;
+    }  
+
+    .reference__item-text {
+        margin-top: -100px;
+        margin-left: 272px;
+    }
+
+    .reference__item-header {
+        width: 398px;
+    }
+    .reference__item_text {
+        width: 398px;
+    }
+
+    .reference__item-img {
+        left: 97px;
+    }
+
+    .reference__item::before {
+        width: 10px;
+        height: 250px;
+        top: -160px;
+        left: 140px;
+        background-color: #E5ECF4;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .reference__list {
+        flex-direction: column;
+    }  
+
+    .reference__item-text {
+        flex-direction: column;
+        margin-top: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 48px;
+    }
+
+    .reference__item-header {
+        width: 311px;
+    }
+    .reference__item_text {
+        width: 311px;
+    }
+
+    .reference__item-img {
+        left: 97px;
+    }
+
+    .reference__item::before {
+        display: none;
+    }
+}

@@ -1,0 +1,195 @@
+.about__container {
+    margin-bottom: 18px;
+}
+
+.about__item {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+.about__item:nth-child(2n) .about__item-wrapper{
+    order: 1;
+}
+
+.about__item-wrapper {
+    position: relative;
+    width: 445px;
+}
+
+.about__item-header {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;   
+    margin-bottom: 24px;
+}
+
+.about__item-text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;   
+    color: #939CAA;  
+    margin-bottom: 40px;   
+}
+
+.about__item-wrapper-1::before {
+    content: "";
+    display: inline-block;
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    top: 240px;
+    left: 535px;
+    background-image: url("../images/strock.png");
+}
+.about__item-wrapper-2::before {
+    content: "";
+    display: inline-block;
+    width: 360px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    left: -830px;
+    background-image: url("../../images/mini-strock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about__item-wrapper-3::before {
+    content: "";
+    display: inline-block;
+    width: 360px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 920px;
+    background-image: url("../images/mini-strock-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about__item-img {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .about .container {
+        padding: 0;
+    }
+
+    .about__item {
+        max-width: 445px;
+        flex-direction: column;
+        margin-bottom: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }  
+    
+    .about__item .about__item-wrapper{
+        order: 1;
+    }
+
+    .about__item-header {
+        margin-bottom: 40px;
+    }
+
+    .about__item-wrapper-1::before {
+        top: -140px;
+        left: -140px;
+    }
+
+    .about__item-wrapper-2::before {
+        top: -430px;
+        left: -180px;
+    }
+
+    .about__item-wrapper-3::before {
+        top: -360px;
+        left: 246px;
+    }
+
+    .about__item-wrapper .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .about {
+        overflow: hidden;
+    }
+
+    .about__item {
+        max-width: 445px;
+        flex-direction: column;
+        margin-bottom: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }  
+
+
+    .about__item-header {
+        margin-bottom: 40px;
+    }
+
+    .about__item-wrapper-1::before {
+        background-image: url("../../images/strelka.png");
+        background-repeat: no-repeat;
+        top: -200px;
+        left: 140px;
+    }
+
+    .about__item-wrapper-2::before {
+        width: 250px;
+        height: 140px;
+        background-image: url("../../images/strelka-2.png");
+        background-repeat: no-repeat;
+        top: -300px;
+        left: 40px;
+    }
+
+    .about__item-wrapper-3::before {
+        width: 250px;
+        height: 170px;
+        background-image: url("../../images/strelka-3.png");
+        background-repeat: no-repeat;
+        top: -300px;
+        left: 150px;
+    }
+
+    .about__item-wrapper .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__item-img {
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+    }
+
+    .about__item-header {
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__item-text {
+        font-size: 15px;
+        line-height: 25px;   
+        margin-bottom: 40px;   
+        width: 311px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
