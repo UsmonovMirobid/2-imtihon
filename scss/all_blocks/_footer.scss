@@ -133,8 +133,8 @@
 @media only screen and (max-width: 768px){
     .footer__top {
         flex-direction: column;
-        overflow: hidden;
         text-align: center;
+        overflow: hidden;
     }
     
     .footer__top::before {

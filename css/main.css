@@ -1205,8 +1205,8 @@ ul, ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow: hidden;
     text-align: center;
+    overflow: hidden;
   }
   .footer__top::before {
     background-image: url("../../images/sircle-768.png");
